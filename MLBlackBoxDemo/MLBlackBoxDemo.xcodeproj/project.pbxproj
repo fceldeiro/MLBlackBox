@@ -21,8 +21,9 @@
 		CD63F81619B8F9590041729F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD63F7F819B8F9590041729F /* UIKit.framework */; };
 		CD63F81E19B8F9590041729F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD63F81C19B8F9590041729F /* InfoPlist.strings */; };
 		CD63F82019B8F9590041729F /* MLBlackBoxDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD63F81F19B8F9590041729F /* MLBlackBoxDemoTests.m */; };
-		CD63F83119B8FB530041729F /* MLBlackBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD63F82F19B8FB530041729F /* MLBlackBoxView.m */; };
-		CD63F83319B8FB6E0041729F /* MLBlackBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD63F83219B8FB6E0041729F /* MLBlackBoxView.xib */; };
+		CD63F84219B9009B0041729F /* MLBlackBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD63F83F19B9009B0041729F /* MLBlackBoxView.m */; };
+		CD63F84319B9009B0041729F /* MLBlackBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD63F84119B9009B0041729F /* MLBlackBoxView.xib */; };
+		CD63F84519B900C60041729F /* MLBlackBox.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD63F84419B900C60041729F /* MLBlackBox.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +56,10 @@
 		CD63F81B19B8F9590041729F /* MLBlackBoxDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLBlackBoxDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CD63F81D19B8F9590041729F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD63F81F19B8F9590041729F /* MLBlackBoxDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLBlackBoxDemoTests.m; sourceTree = "<group>"; };
-		CD63F82E19B8FB530041729F /* MLBlackBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBlackBoxView.h; sourceTree = "<group>"; };
-		CD63F82F19B8FB530041729F /* MLBlackBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBlackBoxView.m; sourceTree = "<group>"; };
-		CD63F83219B8FB6E0041729F /* MLBlackBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLBlackBoxView.xib; sourceTree = "<group>"; };
+		CD63F83E19B9009B0041729F /* MLBlackBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBlackBoxView.h; sourceTree = "<group>"; };
+		CD63F83F19B9009B0041729F /* MLBlackBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLBlackBoxView.m; sourceTree = "<group>"; };
+		CD63F84119B9009B0041729F /* MLBlackBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLBlackBoxView.xib; sourceTree = "<group>"; };
+		CD63F84419B900C60041729F /* MLBlackBox.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MLBlackBox.podspec; path = ../MLBlackBox.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +89,12 @@
 		CD63F7E819B8F9590041729F = {
 			isa = PBXGroup;
 			children = (
-				CD63F82919B8F9680041729F /* MLBlackBox */,
+				CD63F83C19B9009B0041729F /* MLBlackBox */,
 				CD63F7FA19B8F9590041729F /* MLBlackBoxDemo */,
 				CD63F81919B8F9590041729F /* MLBlackBoxDemoTests */,
 				CD63F7F319B8F9590041729F /* Frameworks */,
 				CD63F7F219B8F9590041729F /* Products */,
+				CD63F84419B900C60041729F /* MLBlackBox.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,28 +161,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CD63F82919B8F9680041729F /* MLBlackBox */ = {
+		CD63F83C19B9009B0041729F /* MLBlackBox */ = {
 			isa = PBXGroup;
 			children = (
-				CD63F82D19B8FB530041729F /* classes */,
-				CD63F83019B8FB530041729F /* resources */,
+				CD63F83D19B9009B0041729F /* classes */,
+				CD63F84019B9009B0041729F /* resources */,
 			);
-			path = MLBlackBox;
+			name = MLBlackBox;
+			path = ../MLBlackBox;
 			sourceTree = "<group>";
 		};
-		CD63F82D19B8FB530041729F /* classes */ = {
+		CD63F83D19B9009B0041729F /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				CD63F82E19B8FB530041729F /* MLBlackBoxView.h */,
-				CD63F82F19B8FB530041729F /* MLBlackBoxView.m */,
+				CD63F83E19B9009B0041729F /* MLBlackBoxView.h */,
+				CD63F83F19B9009B0041729F /* MLBlackBoxView.m */,
 			);
 			path = classes;
 			sourceTree = "<group>";
 		};
-		CD63F83019B8FB530041729F /* resources */ = {
+		CD63F84019B9009B0041729F /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				CD63F83219B8FB6E0041729F /* MLBlackBoxView.xib */,
+				CD63F84119B9009B0041729F /* MLBlackBoxView.xib */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -261,7 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD63F80D19B8F9590041729F /* Images.xcassets in Resources */,
-				CD63F83319B8FB6E0041729F /* MLBlackBoxView.xib in Resources */,
+				CD63F84519B900C60041729F /* MLBlackBox.podspec in Resources */,
+				CD63F84319B9009B0041729F /* MLBlackBoxView.xib in Resources */,
 				CD63F7FF19B8F9590041729F /* InfoPlist.strings in Resources */,
 				CD63F80819B8F9590041729F /* Main.storyboard in Resources */,
 			);
@@ -283,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD63F80B19B8F9590041729F /* ViewController.m in Sources */,
-				CD63F83119B8FB530041729F /* MLBlackBoxView.m in Sources */,
+				CD63F84219B9009B0041729F /* MLBlackBoxView.m in Sources */,
 				CD63F80519B8F9590041729F /* AppDelegate.m in Sources */,
 				CD63F80119B8F9590041729F /* main.m in Sources */,
 			);
