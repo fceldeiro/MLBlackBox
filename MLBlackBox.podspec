@@ -39,8 +39,9 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE.txt" }
+  s.platform     = :ios, "6.0"
+  s.source       = { :git => "https://github.com/fceldeiro/MLBlackBox.git", :tag => s.version.to_s }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
