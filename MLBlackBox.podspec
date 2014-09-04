@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary      = "MLBlackBox."
 
   s.description  = <<-DESC
-                   A longer description of MLBlueBox in Markdown format.
+                   A longer description of MLBlackBox in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/fceldeiro/MLBlueBox"
+  s.homepage     = "https://github.com/fceldeiro/MLBlackBox"
   s.license      = { :type => "MIT", :file => "LICENSE.txt" }
   s.author             = { "" => "" }
 
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/fceldeiro/MLBlackBox.git", :tag => s.version.to_s }
 
-  s.public_header_files = 'MLBlueBox/*.h'
-  s.source_files  = "Classes", "MLBlueBox/*.{h,m}"
+  s.public_header_files = 'MLBlueBox/classes/*.h'
+  s.source_files  = "Classes", "MLBlackBox/classes/*.{h,m}"
   
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+   s.resources = "MLBlackBox/resources/*.*"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
